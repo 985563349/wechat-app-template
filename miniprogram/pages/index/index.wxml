@@ -1,0 +1,10 @@
+<navigation-bar
+  title-text="WeChat"
+  background-color="rgba(0, 0, 0, 0)"
+></navigation-bar>
+
+<scroll-view class="scrollarea" type="list" scroll-y>
+  <view class="container">
+    <view>Welcome!</view>
+  </view>
+</scroll-view>

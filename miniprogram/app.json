@@ -1,0 +1,42 @@
+{
+  "pages": ["pages/index/index", "pages/about/about"],
+  "tabBar": {
+    "custom": true,
+    "color": "#7a7e83",
+    "selectedColor": "#12C276",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "About"
+      }
+    ]
+  },
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Wechat",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "usingComponents": {
+    "navigation-bar": "components/navigation-bar/navigation-bar"
+  },
+  "style": "v2",
+  "renderer": "skyline",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

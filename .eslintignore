@@ -1,0 +1,6 @@
+# miniprogram
+miniprogram_npm/
+
+# config
+.eslintrc.js
+commitlint.config.js

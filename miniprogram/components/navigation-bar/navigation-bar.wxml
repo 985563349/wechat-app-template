@@ -1,0 +1,32 @@
+<view class="navigation-bar">
+  <view
+    class="navigation-bar-inner {{ios ? 'ios' : 'android'}}"
+    style="background-color: {{ backgroundColor }}; {{ displayStyle }} {{ innerPaddingRight }} {{ safeAreaTop }}"
+  >
+    <view class="navigation-bar-left" style="{{ leftWidth }}">
+      <view
+        wx:if="{{ showBack }}"
+        class="navigation-bar-button"
+        bind:tap="navigateBack"
+      >
+        <image
+          class="navigation-bar-button__icon"
+          src="/assets/icons/arrow.svg"
+          mode="aspectFit"
+        />
+      </view>
+      <slot name="left"></slot>
+    </view>
+
+    <view class="navigation-bar-center">
+      <text wx:if="{{ titleText }}" style="color: {{ textStyle }}"
+        >{{ titleText }}</text
+      >
+      <slot wx:else name="center"></slot>
+    </view>
+
+    <view class="navigation-bar-right">
+      <slot name="right"></slot>
+    </view>
+  </view>
+</view>

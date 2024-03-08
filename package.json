@@ -1,0 +1,52 @@
+{
+  "name": "wechat-app-template",
+  "version": "0.0.1",
+  "private": true,
+  "description": "WeChat Mini Program Project Template",
+  "scripts": {
+    "lint": "eslint miniprogram --ext .js,.wxs --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier \"miniprogram/**/*.{wxml,js,wxss,json}\" --write",
+    "preview": "node scripts/preview.js",
+    "upload": "node scripts/upload.js --notify",
+    "release": "node scripts/upload.js && release-it --ci --only-version",
+    "commit": "git-cz",
+    "prepare": "husky install"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.{wxml,js,wxss,json}": "prettier --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "dependencies": {
+    "atomu": "^0.0.3",
+    "daigo": "^1.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@commitlint/cz-commitlint": "^18.4.4",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "commitizen": "^4.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "inquirer": "^8.0.0",
+    "lint-staged": "^15.2.0",
+    "md5": "^2.3.0",
+    "miniprogram-ci": "^1.9.10",
+    "prettier": "^2.8.8",
+    "qrcode": "^1.5.3",
+    "release-it": "^17.0.3"
+  }
+}

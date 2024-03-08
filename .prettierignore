@@ -1,0 +1,7 @@
+# miniprogram
+miniprogram_npm/
+project.config.json
+project.private.config.json
+
+# lock
+pnpm-lock.yaml

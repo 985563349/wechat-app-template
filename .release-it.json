@@ -1,0 +1,30 @@
+{
+  "git": {
+    "requireBranch": "master",
+    "commitMessage": "chore: release v${version}"
+  },
+  "gitlab": {
+    "release": true
+  },
+  "npm": {
+    "publish": false
+  },
+  "@release-it/conventional-changelog": {
+    "infile": "CHANGELOG.md",
+    "ignoreRecommendedBump": true,
+    "strictSemVer": true,
+    "preset": {
+      "name": "conventionalcommits",
+      "types": [
+        {
+          "type": "feat",
+          "section": "✨ Features"
+        },
+        {
+          "type": "fix",
+          "section": "🐛 Bug Fixes"
+        }
+      ]
+    }
+  }
+}

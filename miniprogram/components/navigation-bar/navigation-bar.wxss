@@ -1,0 +1,67 @@
+.navigation-bar {
+  --height: 42px;
+  --left: 16px;
+  --text-color: rgba(0, 0, 0, 0.9);
+}
+
+.navigation-bar .android {
+  --height: 46px;
+}
+
+.navigation-bar {
+  flex: none;
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.navigation-bar-inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: env(safe-area-inset-top);
+  width: 100%;
+  height: calc(var(--height) + env(safe-area-inset-top));
+  box-sizing: border-box;
+}
+
+.navigation-bar-left {
+  display: flex;
+  align-items: center;
+  padding-left: var(--left);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.navigation-bar-button {
+  position: relative;
+}
+
+.navigation-bar-button::before {
+  position: absolute;
+  content: '';
+  top: -14px;
+  right: -14px;
+  bottom: -14px;
+  left: -14px;
+}
+
+.navigation-bar-button__icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.navigation-bar-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,21 @@
+page {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: calc(
+    var(--tabbar-height, 50px) + env(safe-area-inset-bottom)
+  );
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.scrollarea {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
